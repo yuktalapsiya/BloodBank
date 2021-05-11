@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+{% include 'layout.html' %}
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">APJEE COLLEGE,COLABA</div>
+                    <div class="panel-body"><img src='{{ url_for("static", filename="images/newcamp1.jpg") }}' class="img-responsive" style="width:100%" alt="Image"></div>
+                    <div class="panel-footer"><p>Organised By:Lions Club</p><p>State:Maharashtra</p><p>City:Mumbai</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">LUCKY COLLEGE OF COMMERCE,SION-(EAST)</div>
+                            <div class="panel-body"><img src='{{ url_for("static", filename="images/camp2.jpg") }}' class="img-responsive" style="width:100%" alt="Image"></div>
+                            <div class="panel-footer"><p>Organised By:Welfare Society</p><p>State:Maharashtra</p><p>City:Mumbai</p></div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="panel panel-primary">
+                                    <div class="panel-heading">INLACKS CLINIC,GHATKOPAR-(EAST)</div>
+                                    <div class="panel-body"><img src='{{ url_for("static", filename="images/camp3.jpg") }}' class="img-responsive" style="width:100%" alt="Image"></div>
+                                    <div class="panel-footer"><p>Organised By:Human Welfare Society</p><p>State:Maharashtra</p><p>City:Mumbai</p></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><br>
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="panel panel-primary">
+                                    <div class="panel-heading">CHARITY CROSS HOME,BANDRA-(WEST)</div>
+                                    <div class="panel-body"><img src='{{ url_for("static", filename="images/camp42.jpg") }}' class="img-responsive" style="width:100%" alt="Image"></div>
+                                    <div class="panel-footer"><p>Organised By:Lions Club</p><p>State:Maharashtra</p><p>City:Mumbai</p></div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="panel panel-primary">
+                                    <div class="panel-heading">RED CROSS SOCIETY,DADAR-(EAST)</div>
+                                    <div class="panel-body"><img src='{{ url_for("static", filename="images/camp5.jpg") }}' class="img-responsive" style="width:100%" alt="Image"></div>
+                                    <div class="panel-footer"><p>Organised By:Nidhi NGO</p><p>State:Maharashtra</p><p>City:Mumbai</p></div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="panel panel-primary">
+                                    <div class="panel-heading">GOODWILL SOCIETY,THANE-(WEST)</div>
+                                    <div class="panel-body"><img src='{{ url_for("static", filename="images/camp6.jpg") }}' class="img-responsive" style="width:100%" alt="Image"></div>
+                                    <div class="panel-footer"><p>Organised By:Suvidha Home</p><p>State:Maharashtra</p><p>City:Mumbai</p></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><br><br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
