@@ -138,13 +138,13 @@ input[type=submit] {
     {{ form.gender() }}
 
     {{ form.age.label }}
-    {{ form.age(placeholder="Age", min="18", max="60") }}
+    {{ form.age(placeholder="Age", min="18", max="60", type="number") }}
 
     {{ form.email.label }}
     {{ form.email(placeholder="Email") }}
 
     {{ form.mobile.label }}
-    {{ form.mobile(placeholder="Mobile Number") }}
+    {{ form.mobile(placeholder="Mobile Number", type="number") }}
 
     {{ form.password.label }}
     {{ form.password(placeholder="Enter password") }}
