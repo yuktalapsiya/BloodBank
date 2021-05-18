@@ -138,7 +138,7 @@ input[type=submit] {
     {{ form.gender() }}
 
     {{ form.age.label }}
-    {{ form.age(placeholder="Age") }}
+    {{ form.age(placeholder="Age", min="18", max="60") }}
 
     {{ form.email.label }}
     {{ form.email(placeholder="Email") }}
